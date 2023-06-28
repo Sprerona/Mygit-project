@@ -1,0 +1,134 @@
+:root{
+    font-size: 100px;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue:#8fadff;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-weight:500 ;
+    background-repeat: repeat-x;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+}
+h1{
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: #233975;
+}
+a:hover{
+    text-decoration: underline;
+}
+.small{
+    font-size: 80%;
+    text-align: center;
+}
+.split screen{
+          display: flex;
+          flex-direction: coloumn;
+}
+.left{
+    height: 200px;
+}
+.left, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    background:linear gradient(rgb(0, 0, 0),rgba(0, 0, 0.5)),url(..\Images\illustration-free-vector2.jpg);
+    background-size:cover
+}
+.left.copy{
+    color: rgb(255, 241, 241);
+    text-align: center;
+    -webkit-font-smoothing:antialized;
+    -moz-osx-font-smoothing:grayscale;
+}
+.left p{
+    font-weight: 400;
+}
+.right.copy{
+    color: rgb(230, 245, 165);
+    text-align: center;  
+}
+.right.copy p{
+    margin: 1.5em 0 ;
+    font-size: 0.875 rem;
+}
+.right form{
+    width: 328px;
+}
+form input[type="text"]
+form input[type="First Name"]
+form input[type="Last Name"]
+form input[type="Email Id"]
+form input[type="Phone Number"]
+form input[type="Date of Birth"]
+form input[type="Adress"]
+form input[type="Gender"]
+form input[type="Course"]
+form input[type="Hobbies"]{
+    display:block;
+width:100;
+box-sizing: border-box;
+border-radius: 8px;
+border: 1px solid rgb(163, 248, 113);
+padding: 1em;
+margin-bottom: 1.25rem;
+font-size: 0.875rem;
+box-shadow: #8fadff;
+}
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+.input {
+    border: 1px solid var(--colour-three);
+    padding: 5px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    background: none;
+    box-shadow: inset 10px 10px 6px -5px rgba(255,209,183,1);
+  }
+.button {
+    background: var(--colour-six);
+    position: absolute;
+    width: 80px;
+    top: 70%;
+    right: 10%;
+    padding: 5px;
+    color: var(--colour-one);
+    border-radius: 10px;
+    border: none;
+}
+
+.button .submit {
+    color: #ffbaba;
+    font-size: 15px;
+  }
+  .button .reset {
+    color: #ffb6b6;
+    font-size: 15px;
+  }
+@media screen and (min-width:1500px){
+    .split screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left,
+    .right{
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}
